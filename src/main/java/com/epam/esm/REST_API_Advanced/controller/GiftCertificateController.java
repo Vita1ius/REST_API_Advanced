@@ -30,6 +30,7 @@ public class GiftCertificateController {
         return service.getByName(name);
     }
     @PostMapping()
+    //@PreAuthorize("hasAuthority('ADMIN')")
     public GiftCertificateDto create(@RequestBody @Valid GiftCertificateDto giftCertificateDto) {
         return service.create(giftCertificateDto);
     }
