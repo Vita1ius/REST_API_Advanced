@@ -21,7 +21,9 @@
         <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.language>java</sonar.language>
         <java.version>17</java.version>
+        <start-class>com.epam.esm.REST_API_Advanced.Module3Application</start-class>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
